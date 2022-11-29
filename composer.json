@@ -1,0 +1,45 @@
+{
+    "name": "tripteki/laravelphp-docs",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Codebase Convention",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/convention-php-docs",
+    "support": { "issues": "https://github.com/tripteki/convention-php-docs/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "darkaonline/l5-swagger": "^8.4.1"
+    },
+
+    "require-dev": {},
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Tripteki\\Docs\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\Docs\\Providers\\DocsServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
